@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    点击打开我的简历：<input type="button" value="打开">
+    <div id="resume">
+        <h1>我的简历</h1>
+        <div id="information" class="content">
+            <h2>个人信息</h2>
+            <table id="header">
+                <tr>
+                    <td>姓名：</td>
+                    <td>署小名</td>
+                </tr>
+                <tr>
+                    <td>联系电话：</td>
+                    <td>12345678901</td>
+                </tr>
+                <tr>
+                    <td>email：</td>
+                    <td><a href="#">123456789@qq.com</a></td>
+                </tr>
+                <tr>
+                    <td>联系地址：</td>
+                    <td>银河系-地球-中国</td>
+                </tr>
+            </table>
+            <img src="#" alt="头像" >
+        </div>
+        <div id="education" class="content">
+            <h2>教育经历</h2>
+            <dl>
+                <dt>大学</dt>
+                <dd>家里蹲大学</dd>
+                <dt>高中</dt>
+                <dd>田里走高中</dd>
+                <dt>初中</dt>
+                <dd>挥锄头初中</dd>
+            </dl>
+        </div>
+        <div id="interest" class="content">
+            <h2>兴趣爱好</h2>
+            <ol>
+                <li>读书</li>
+                <li>吃肉</li>
+                <li>跑步</li>
+                <li>打群主</li>
+            </ol>
+        </div>
+        <div id="project" class="content">
+            <h2>项目经验</h2>
+            <div id="explain">
+                <h3>911事件</h3>
+                <p>2001年9月11日上午 ，两架被恐怖分子劫持的民航客机分别撞向美国纽约世界贸易中心一号楼和世界贸易中心二号楼，两座建筑在遭到攻击后相继倒塌，世界贸易中心其余5座建筑物也受震而坍塌损毁;9时许，另一架被劫持的客机撞向位于美国华盛顿的美国国防部五角大楼，五角大楼局部结构损坏并坍塌。</p>             
+                <h3>收复台湾</h3>
+                <p>公元1661年3月，中国明末清初的民族英雄郑成功率兵25000人、战舰近500艘，从金门料罗湾出发，经澎湖直抵台湾西海岸,在台湾人民的支持下，经过九个月激战，击败荷兰殖民者,迫使荷兰侵略者挂起了白旗投降，被侵占了三十八年之久的台湾，终于回到了祖国的怀抱。</p>
+            </div>
+            <input type="button" value="隐情">点击前边按钮查看隐情。
+        </div>    
+    </div>
+    <script type="text/javascript">
+        var oInput = document.getElementsByTagName('input');
+        var oResume = document.getElementById('resume');
+        var explain = document.getElementById('explain');
+
+        oInput[0].onclick = function () {
+            oResume.style.display = 'block';
+        }
+        oInput[1].onclick = function () {
+            explain.innerHTML = '别当真，全是胡诌的！'
+        }
+
+    </script>
+</body>
+</html>

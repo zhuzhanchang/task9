@@ -1,0 +1,62 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+#resume { display: none;}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    width: 50%;
+    margin: 10px auto;
+    background: #888;
+}
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    background-color: aquamarine;
+}
+td {
+    line-height: 28px;
+}
+a:link {
+    color: aqua;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: beige;
+}
+a:active {
+    color: yellow;
+}
+li {
+    list-style: none;
+    text-decoration: underline;
+    color: blue;
+}
+p {
+    text-indent: 2em;
+    line-height: 25px;
+}
+.content {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid blue;
+}
+img {
+    width: 120px;
+    height: 150px;
+    float: left;
+    margin-left: 200px;
+    border: 1px solid blue;
+}
+table {
+    float: left;
+    
+}
+#information:after {
+    content: '';
+    display: block;
+    clear: both;
+}
